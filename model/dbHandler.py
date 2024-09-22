@@ -2,7 +2,6 @@ import sqlite3 as SQL
 
 
 def match_exact(word: str) -> list:
-
     db = SQL.connect("data/dictionary.db")
     sql_query = "SELECT * from entries WHERE word=?"
 
